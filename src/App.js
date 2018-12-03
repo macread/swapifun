@@ -35,7 +35,7 @@ function getSorting(order, orderBy) {
   return order === 'desc' ? (a, b) => desc(a, b, orderBy) : (a, b) => -desc(a, b, orderBy);
 }
 
-async function f() {
+async function myAsyncAndAwaitFunction() {
   let promise = new Promise((resolve, reject) => {
     setTimeout(() => resolve("I waited 10 seconds before displaying using Async/Await"), 10000)
   });
@@ -95,7 +95,7 @@ class App extends React.Component {
     }
 
 
-    f();
+    myAsyncAndAwaitFunction();
 
   }
 
